@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML</title>
+  <style>
+  *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 20px;
+  background: linear-gradient(45deg, red, yellow);
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1120px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.main .card{
+  height: 420px;
+  width: 300px;
+  background: white;
+  border-radius: 10%;
+  overflow: hidden;
+  box-shadow: 0 15px 25px #333;
+  margin: 20px;
+  transition: 0.5s;
+}
+.main:hover .card{
+  filter: blur(20px);
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+.main .card:hover{
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.1);
+}
+.main .card .number{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  background: black;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+}
+.main .card .number h1{
+  color: white;
+  font-size: 5em;
+  padding: 10px;
+}
+.main .card .text{
+  position: relative;
+  text-align: center;
+  
+}
+.main .card .text p{
+  font-size: 20px;
+  font-family: fantasy;
+  
+}
+.main .card .text a{
+  font-size: 30px;
+  text-decoration: none;
+  background: black;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 30px;
+}
+    
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="card">
+      <div class="number">
+        <h1>01</h1>
+      </div>
+      <div class="text">
+         <p>for the next few days and I have a few questions about the class. jo vi tumne mujhse kaha hai sanorita. sei mamma sei joss hoise box ta tai na?bujhte hobe ami banaise</p>
+         <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="number">
+        <h1>02</h1>
+      </div>
+      <div class="text">
+        <p>for the next few days and I have a few questions about the class. jo vi tumne mujhse kaha hai sanorita. sei mamma sei joss hoise box ta tai na?bujhte hobe ami banaise</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="number">
+        <h1>03</h1>
+      </div>
+      <div class="text">
+        <p>for the next few days and I have a few questions about the class. jo vi tumne mujhse kaha hai sanorita. sei mamma sei joss hoise box ta tai na?bujhte hobe ami banaise</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+</body>
+</html>
